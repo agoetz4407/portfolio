@@ -1,0 +1,37 @@
+:root {
+    --primaryblue: #023047;
+    --secondaryblue: #219EBC;
+    --tertiaryblue: #8ecae6;
+    --primaryyellow: #FB8500;
+    --secondaryyellow: #FFB703;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+    background: var(--primaryblue);
+    color: var(--primaryyellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--secondaryyellow);
+}
+
