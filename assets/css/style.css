@@ -122,8 +122,27 @@ header ul li a:hover {
 }
 
 /* footer style */
-.contact {
-    text-align: center;
-    text-decoration: none;
+footer {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer a {
     color: var(--color4);
+    text-decoration: none;
+    font-size: 32px;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    color: var(--color5);
+    text-decoration: underline;
+}
+
+footer p {
+    color: var(--color4);
+    font-size: 32px;
+    padding-left: 30px;
 }
