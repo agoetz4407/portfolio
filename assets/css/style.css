@@ -66,7 +66,27 @@ header ul li a:hover {
     padding: 30px 100px;
 }
 
-/* projects styles */
-.projects {
+/* my work styles */
+.my-work {
     background-color: var(--color2);
+}
+
+.main-project {
+    background-image: url(../images/fullstack.jpg)
+}
+
+.wikipedia {
+    background-image: url(../images/wikipedia.png);
+}
+
+.run-buddy {
+    background-image: url(../images/run-buddy.jpg);
+}
+
+.robotco {
+    background-image: url(../images/robotco.png);
+}
+
+.robot-gladiators {
+    background-image: url(../images/robot-gladiators.png);
 }
