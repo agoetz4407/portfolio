@@ -22,11 +22,8 @@ body {
 /* header styles */
 header {
     background: var(--color1);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 5px 30px;
-    font-size: 28px;
+    padding: 5px 0;
+    font-size: 26px;
     box-shadow: 0 2px 2px var(--color4);
     z-index: 9999;
     position: -webkit-sticky;
@@ -36,13 +33,13 @@ header {
 
 header ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     list-style: none;
 }
 
 header ul li a {
-    margin: 10px 25px;
+    margin: 10px 15px;
     text-decoration: none;
     color: var(--color4);
 }
@@ -57,22 +54,23 @@ header ul li a:hover {
     background-color: var(--color2);
     color: var(--color5);
     text-align: center;
-    border-bottom: 1px solid var(--color4);
+    border-bottom: 1px solid var(--color5);
 }
 
 .about-me h1 {
     font-size: 40px;
-    padding: 15px 0;
+    padding-top: 10px;
 }
 
 .about-me p {
-    padding: 0px 100px 15px 100px;
+    padding: 0px 200px 10px 200px;
+    font-size: 20px;
 }
 
 /* work/projects styles */
 .my-work {
     background-color: var(--color2);
-    padding: 15px 40px;
+    padding: 15px 200px;
 }
 
 .my-work h2 {
@@ -80,19 +78,17 @@ header ul li a:hover {
     font-size: 40px;
     color: var(--color5);
     padding-bottom: 15px;
-    border-bottom: 1px solid var(--color5);
+    margin: 0 30%;
 }
 
-.secondary-projects {
-    display: flex;
-    flex-wrap: wrap;
-    color: var(--color3);
+.projects {
+    padding: 15px 10px;
+    border-top: 1px solid var(--color5);
 }
 
 .project a {
     text-decoration: none;
     background-color: var(--color1);
-    
 }
 
 .main-project {
@@ -100,9 +96,16 @@ header ul li a:hover {
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: 70%;
-    padding: 50px 200px;
-    border-radius: 20px;
+    width: 90%;
+    margin: auto auto;
+    border-radius: 5px;
+}
+
+.secondary-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: var(--color3);
 }
 
 .wikipedia {
@@ -123,17 +126,21 @@ header ul li a:hover {
 
 /* footer style */
 footer {
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer p, footer a {
+    color: var(--color4);
+    text-decoration: none;
+    font-size: 20px;
 }
 
 footer a {
-    color: var(--color4);
-    text-decoration: none;
-    font-size: 32px;
-    padding: 0 10px;
+    color: var(--color3)
 }
 
 footer a:hover {
@@ -141,8 +148,24 @@ footer a:hover {
     text-decoration: underline;
 }
 
-footer p {
-    color: var(--color4);
-    font-size: 32px;
-    padding-left: 30px;
+/* media queries */
+@media screen and (max-width: 900px) {
+    .about-me p {
+        padding: 0 30px 10px 30px;
+    }
+
+    .my-work {
+        padding: 15px 20px;
+    }
+    
+    .my-work h2 {
+        padding: 0 0px 15px 0px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        flex-direction: column;
+    }
 }
