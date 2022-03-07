@@ -96,9 +96,9 @@ header ul li a:hover {
     background-size: cover;
     background-position: center;
     height: 500px;
-    width: 90%;
+    width: 100%;
     margin: auto auto;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .secondary-projects {
@@ -110,18 +110,34 @@ header ul li a:hover {
 
 .wikipedia {
     background-image: url(../images/wikipedia.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    border-radius: 4px;
 }
 
 .run-buddy {
     background-image: url(../images/run-buddy.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    border-radius: 4px;
 }
 
 .robotco {
     background-image: url(../images/robotco.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    border-radius: 4px;
 }
 
 .robot-gladiators {
     background-image: url(../images/robot-gladiators.png);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    border-radius: 4px;
 }
 
 /* footer style */
