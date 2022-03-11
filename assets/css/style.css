@@ -1,5 +1,6 @@
 /* variables */
 :root {
+    /* color variables go from darkest to lightest */
     --color1: #22223b;
     --color2: #4a4e69;
     --color3: #9a8c98;
@@ -56,15 +57,20 @@ header ul li a:hover {
     color: var(--color5);
     text-align: center;
     border-bottom: 1px solid var(--color5);
+    padding: 15px 0;
+}
+
+.about-me img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5px;
 }
 
 .about-me h1 {
     font-size: 40px;
-    padding-top: 10px;
 }
 
 .about-me p {
-    padding: 0px 200px 10px 200px;
     font-size: 20px;
 }
 
@@ -183,7 +189,7 @@ footer a {
 footer a:hover {
     color: var(--color5);
     text-decoration: underline;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
 }
 
 /* media queries */
@@ -209,13 +215,8 @@ footer a:hover {
 }
 
 @media screen and (max-width: 600px) {
-
-    header {
-        font-size: 20px;
-    }
-
-    header ul li a {
-        margin: 10px 5px;
+    header ul {
+        flex-direction: column;
     }
 
     .secondary-projects {
