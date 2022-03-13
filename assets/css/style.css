@@ -71,7 +71,7 @@ header ul li a:hover {
 
 .about-me p {
     font-size: 20px;
-    margin: 0 10vw;
+    margin: 0 12vw;
 }
 
 /* work/projects styles */
@@ -84,22 +84,22 @@ header ul li a:hover {
     font-size: 40px;
     color: var(--color5);
     padding: 15px 0 5px 0;
-    margin: 0 14vw;
+    margin: 0 15vw;
     border-bottom: 1px solid var(--color5);
 }
 
 .projects {
-    padding: 15px 14vw;
+    padding: 15px 14vw 30px 14vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 3vw;
-    row-gap: 15px;
+    column-gap: 2vw;
+    row-gap: 2vw;
 }
 
 .main-project {
-    height: 71vh;
-    width: 74vw;
+    height: 500px;
+    width: 70vw;
     margin: auto auto;
     position: relative;
     grid-row: span 2;
@@ -134,8 +134,8 @@ header ul li a:hover {
 }
 
 .secondary-project {
-    width: 35.5vw;
-    height: 35vh;
+    width: 33vw;
+    height: 220px;
     margin: auto auto;
     position: relative;
 }
@@ -192,28 +192,34 @@ footer a:hover {
     .about-me p {
         margin: 0 5vw;
     }
+
     .project-text {
         font-size: 80%;
     }
 
     .my-work h2 {
-        margin: 0 10vw; 
+        margin: 0 9vw; 
     }
 
     .projects {
-        padding: 4vh 10vw;
+        padding: 15px 9vw 30px 9vw;
+        column-gap: 4vw;
+        row-gap: 4vw;
     }
     
     .main-project {
-        width: 83vw;
+        width: 82vw;
+        height: 400px
     }
 
     .secondary-project {
-        width: 40vw;
+        height: 200px;
+        width: 39vw;
     }
 }
 
 @media screen and (max-width: 500px) {
+
     header ul {
         flex-direction: column;
     }
